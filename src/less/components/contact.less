@@ -1,0 +1,59 @@
+.contact_name {
+  font-size: 24px;
+  margin: 10px 0 10px;
+  color: #2e2e2e;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+.siteMenu_title__page {
+  margin-bottom: 23px;
+  .siteMenu_title_name {
+    height: 27px;
+    padding-right: 0;
+    &:after {
+      display: none;
+    }
+  }
+}
+.contact_description {
+  display: block;
+  position: relative;
+  font-size: 18px;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #ffffff;
+  box-sizing: border-box;
+  &:last-child {
+    border-bottom: 1px solid #dddddd;
+  }
+  a{
+    display: block;
+    padding: 7px;
+    color: #333333;
+    &:hover{
+      color: #6f334c;
+      background: #fdfdfd;
+    }
+  }
+}
+.contact_description.active {
+  border: 1px solid #d2bfc7;
+  background: #fdfdfd;
+  &:before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    height: 1px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: 5;
+  }
+}
+.icons {
+  .sprite(@icons);
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -@icons-width/2;
+}

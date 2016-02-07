@@ -1,0 +1,55 @@
+.contactDescription {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  text-align: center;
+  margin: 30px 20px;
+}
+.contactDescription_roadMap {
+  height: 246px;
+  width: 100%;
+  background: #333 url("../../images/map.png");
+  background-size: cover;
+  display: inline-block;
+  margin-top: 15px;
+  box-shadow: inset 0 0 0 1px #fff;
+  border: 1px solid #4c0120;
+}
+.contactDescription_detailedDescription {
+  margin-top: 10px;
+  text-align: center;
+  .contactDescription_detailedDescription_address {
+    display: inline-block;
+    margin: 0 0 12px 0;
+    color: #333333;
+    text-align: right;
+    p {
+      margin: 8px 0;
+    }
+    p:first-child {
+    text-align: center;
+    }
+  }
+  .contactDescription_detailedDescription_schedule {
+    margin: 0 0 20px 0;
+    p {
+      margin: 8px 0;
+    }
+  }
+  .contactDescription_detailedDescription_mail {
+    p {
+      margin: 8px 0;
+    }
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1100px) {
+  .contactDescription_roadMap {
+    height: 233px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+}
